@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Tip Calculator</title>
+  </head>
+  <body class="bg-light">
+    <div id="main-div" class="container col-md-4">
+      <div id="second-div" class="card  mb-3">
+        <div class="card-header ">
+          <h1>Tip Calculator</h1>
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="billAmount">How much was your bill?</label>
+
+            <input type="number" class="form-control"id="bill" placeholder="Enter Your Bill Amount"
+            />
+          </div>
+          <div class="form-group">
+            <label for="service">How was your service?</label>
+            <select class="float-right" name="" id="tipPercent">
+              <option value="">Choose an Option</option>
+              <option value="30">30%-Outstanding</option>
+              <option value="20">20%-Good</option>
+              <option value="15">15%-It was OK</option>
+              <option value="10">10%-Bad</option>
+              <option value="5">5%-Terrible</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="numOfPeople"
+              >How many people are sharing the bill?</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="numOfPeople"
+              placeholder="Number of People"
+            />
+          </div>
+          <div class="color" id="result"></div>
+          <button
+            type="submit"
+            onClick="calculateTip()"
+            class=" btn  background"
+          >
+            Calculate
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/practice4.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+main-div {
+  position: absolute;
+}
+
+second-div {
+  position: relative;
+  top: 3rem;
+  
+}
+
+
+.background{
+  background-color:blueviolet;
+
+}
+.color{
+
+  color: black;
+}
